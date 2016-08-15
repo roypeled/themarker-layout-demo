@@ -1,0 +1,132 @@
+body {
+    background: white;
+    color: black;
+    margin:0;
+    padding:0;
+
+    font-family: sans-serif;
+    direction: rtl;
+}
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    display: inline-block;
+    background: url(http://www.themarker.com/tm/images/logos/tm-logo--small.v1.png);
+    width: 258px;
+    height: 54px;
+    overflow: hidden;
+    text-indent: -500px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    border-bottom: 4px solid grey;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 10px;
+    border-left: 1px solid black;
+}
+
+nav li:last-child {
+    border: 0;
+}
+
+
+main {
+    position: relative;
+    overflow: hidden;
+    background: lightgrey;
+    position: relative;
+}
+
+main::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: darkslategrey;
+    width: 300px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+main>aside {
+    float: left;
+    width: 300px;
+    background: darkslategrey;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+main>.main-content {
+    margin-left: 300px;
+}
+
+footer aside {
+    background: darkslategrey;
+    border-top: 3px solid springgreen;
+    height: 170px;
+}
+
+.main-content {
+    position: relative;
+}
+
+.main-content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background: white;
+    z-index: 0;
+}
+
+.main-content>aside {
+    float: left;
+    width: 200px;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.main-content .article-list {
+    margin-left: 200px;
+}
+
+
+.article-list article {
+    padding: 10px 25px 10px 10px;
+    background: white;
+    border: 1px solid grey;
+    margin: 20px;
+    position: relative;
+    box-shadow: 0 0 3px 0 black
+}
+
+
+.article-list article img{
+    width: 100%;
+}
+
+.article-list article aside{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
